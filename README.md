@@ -1,3 +1,5 @@
+# The project deployed site: https://my-vue-counter-app.netlify.app/
+
 # alt-exam
 
 ## Project setup
