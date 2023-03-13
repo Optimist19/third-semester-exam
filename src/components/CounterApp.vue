@@ -49,6 +49,7 @@ button{
   padding: 1vh 2vh;
   cursor: pointer;
   font-size: 20px;
+  border-radius: 5px;
 }
 
 button:first-child{
