@@ -1,5 +1,5 @@
 import {ref} from "vue"
-const numberCount = (initialValue = 0, valSetting = 1) =>{
+const useComposable = (initialValue = 0, valSetting = 1) =>{
 	
 	let count = ref(initialValue)
 
@@ -28,4 +28,4 @@ const numberCount = (initialValue = 0, valSetting = 1) =>{
 
 }
 
-export default numberCount
+export default useComposable

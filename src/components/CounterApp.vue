@@ -11,11 +11,11 @@
 </template>
 
 <script>
-import numberCount from "../Composable/Composable"
+import useComposable from "../Composable/useComposable"
 export default {
   name: 'CounterApp',
   setup(){
-    const {count, increment, decrement, reset} = numberCount(100, 20)
+    const {count, increment, decrement, reset} = useComposable(100, 20)
     return{
       count, increment, decrement, reset
     }
