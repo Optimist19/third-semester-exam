@@ -6,6 +6,7 @@
       <button @click="increment">Add</button>
       <button @click="decrement">Sub</button>
       <button @click="reset">Reset</button>
+      <button @click="setValue">Set Value</button>
     </div>
   </div>
 </template>

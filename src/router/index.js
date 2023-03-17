@@ -1,11 +1,17 @@
 import { createRouter, createWebHistory } from 'vue-router'
 import HomeView from '../views/HomeView.vue'
+import CounterView from '../views/CounterView.vue'
 
 const routes = [
   {
     path: '/',
     name: 'HomeView',
     component: HomeView
+  },
+  {
+    path: '/counter',
+    name: 'CounterView',
+    component: CounterView
   },
   {
     path: "/:pathMatch(.*)*",

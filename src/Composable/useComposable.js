@@ -1,5 +1,5 @@
 import {ref} from "vue"
-const useComposable = (initialValue = 0, valSetting = 1) =>{
+const useComposable = (initialValue = 0, valSetting = 1, setValue = 0) =>{
 	
 	let count = ref(initialValue)
 
@@ -14,6 +14,10 @@ const useComposable = (initialValue = 0, valSetting = 1) =>{
 	function reset(){
 	  count.value = 0
 	}
+
+	// function setValue(){
+	// 	initialValue.value = setValue 
+	// }
    
 	// const setValue = () =>{
 	//   count.value = count.value - 1
@@ -23,7 +27,8 @@ const useComposable = (initialValue = 0, valSetting = 1) =>{
 	  count,
 	  increment,
 	  decrement,
-	  reset
+	  reset,
+	//   setValue
 	}
 
 }

@@ -1,24 +1,21 @@
 <template>
-  <div>
-    <img alt="Vue logo" src="../assets/logo.png">
-  </div>
-    <CounterApp />
+    <HomePage />
 </template>
 
 <script>
-import CounterApp from '@/components/CounterApp.vue'
+import HomePage from '@/components/HomePage.vue'
 
 export default {
   name: 'HomeView',
   components: {
-    CounterApp
+    HomePage
   }
 }
 </script>
 
 <style scoped>
 div{
-  display: flex;
-  justify-content: center;
+  /* display: flex;
+  justify-content: center; */
 }
 </style>
