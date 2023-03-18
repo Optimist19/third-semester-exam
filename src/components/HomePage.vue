@@ -1,7 +1,7 @@
 <template>
 
 	<h1>DO YOU WANT TO PLAY WITH A COUNTER APP?</h1>
-	<h2>CLICK ON THE LINK BELOW TO GET STARTED</h2>
+	<h2>CLICK ON THE "CLICK ME" BELOW TO GET STARTED</h2>
 	<router-link :to="{name: 'CounterView'}">CLICK ME!!!</router-link>
 	
 </template>
