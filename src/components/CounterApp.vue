@@ -1,7 +1,10 @@
 <template>
+  <div>
+  		<i @click="backHome" class="fa-sharp fa-solid fa-circle-arrow-left"></i>
+	</div>
   <div class="container">
     <p>{{count}}</p>
-    <input type="number" v-model="count" placeholder="set your value" />
+    <input type="number" v-model="set" placeholder="set your value" />
     <div class="bttn-con">
       <button @click="increment">Add</button>
       <button @click="decrement">Sub</button>
@@ -13,12 +16,21 @@
 
 <script>
 import useComposable from "../Composable/useComposable"
+import {useRouter} from "vue-router"
+
 export default {
   name: 'CounterApp',
   setup(){
-    const {count, increment, decrement, reset} = useComposable(100, 20)
+    const navigate = useRouter()
+
+    const backHome = () =>{
+      navigate.push(`/`)
+    }
+
+    const {count, increment, decrement, reset, set, setValue} = useComposable(100, 20)
+
     return{
-      count, increment, decrement, reset
+      count, increment, decrement, reset, set, setValue, backHome, navigate
     }
   }
 }
@@ -26,6 +38,12 @@ export default {
 
 <!-- Add "scoped" attribute to limit CSS to this component only -->
 <style scoped>
+
+i{
+	font-size: 30px;
+	margin: 12vh 0 0 3vw;
+	cursor: pointer;
+}
 .container{
   display: flex;
   flex-direction: column;

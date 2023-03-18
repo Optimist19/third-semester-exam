@@ -5,19 +5,20 @@
 </template>
 
 <script>
+import useComposable from '@/Composable/useComposable'
 import {useRouter} from "vue-router"
+// import useComposable
 export default {
 	name: "PageNotFound",
 	setup(){
-
-    const navigate = useRouter()
+		const navigate = useRouter()
 
 		const backHome = () =>{
 			navigate.push(`/`)
 		}
 
 		return{
-      		navigate,
+			navigate,
 			backHome
 		}
 	}
